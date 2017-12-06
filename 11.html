@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery each遍历对象</title>
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript">
+	   $(function(){
+          var obj = {
+          	"name":"jiumeng",
+          	"age":22,
+          	"height":170
+          }
+           $.each(obj,function(){
+           		alert(obj.name)
+           })
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zepto不加事件委托</title>
+	<style type="text/css">
+		.cont{
+			width:500px;
+			height: 500px;
+			background: #ccc;
+		}
+		.cont2{
+			width:100px;
+			height:100px;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="cont">
+		<div class="cont2">2</div>
+	</div>
+		<script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+	<script type="text/javascript">
+	   $(function(){
+           	$(".cont").click(function(){
+           		alert("1");
+           	})
+           	$(".cont2").click(function(){
+           		alert("2");//2,1
+           	})
+		})
+	</script>
+</body>
+</html>

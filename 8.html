@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zepto获取隐藏元素宽度</title>
+	<style type="text/css">
+		.cont{
+			width:500px;
+			height: 500px;
+			background: #ccc;
+			margin:100px 100px;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="cont">
+		啊恐龙当家拉克丝打了卡时间到了卡进历史肯德基克拉势均力敌卡聚少离多框架拉克丝讲道理卡死建档立卡基拉看似简单拉上来打开拉克丝讲道理卡见识到了卡就是拉时间到了卡死了贷款就拉克丝了点击拉克丝讲道理卡了可视对讲来看端上拉肯德基阿卡丽拉克丝的
+	</div>
+	<script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+	<script type="text/javascript">
+	   $(function(){
+           console.log($(".cont").width());//0
+		})
+	</script>
+</body>
+</html>

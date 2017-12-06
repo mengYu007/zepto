@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery事件委托</title>
+	<style type="text/css">
+		.cont{
+			width:500px;
+			height: 500px;
+			background: #ccc;
+		}
+		.cont2{
+			width:100px;
+			height:100px;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="cont">
+		<div class="cont2">2</div>
+	</div>
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript">
+	   $(function(){
+           	$("body").on("click",".cont",function(){
+           		alert("1");
+           	})
+
+           	$("body").on("click",".cont2",function(){
+           		alert("2");
+           		//return false;//加可以return false可以防止事件冒泡，不会弹出1
+           	})//2,1
+		})
+	</script>
+</body>
+</html>
